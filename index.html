@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DCalc Pro - Professional 3D Printing Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="sticky-header">
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/Calculadora Logo.png" alt="3DCalc Pro Logo" class="logo-image">
+                <span>3DCalc Pro</span>
+            </div>
+            <button class="subscribe-btn" onclick="handleSubscribeClick()">
+                <i class="fas fa-crown"></i> Subscribe Now
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="fade-in">
+                Price Your 3D Printing Projects with
+                <span class="highlight">Accuracy and Confidence</span>
+            </h1>
+            <p class="hero-text fade-in delay-1">
+                Stop guessing at pricing. Our professional calculator helps 3D printing businesses 
+                determine exact project costs and set profitable pricing based on real-world data.
+            </p>
+            <div class="cta-container fade-in delay-2">
+                <button class="cta-btn" onclick="handleSubscribeClick()">
+                    <i class="fas fa-calculator"></i> Start Pricing Accurately
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Description -->
+    <section class="product-description scroll-reveal">
+        <div class="container">
+            <div class="text-center max-width-content">
+                <h2>
+                    The Complete 3D Printing Business Solution
+                </h2>
+                <p class="description-text">
+                    Our advanced calculator takes the guesswork out of pricing by considering all the factors 
+                    that matter: electricity costs per kWh, profit margins, printer depreciation, and filament 
+                    costs per gram. Every calculation is automatically saved with detailed project history and 
+                    professional reports you can share with clients.
+                </p>
+                
+                <div class="features-grid">
+                    <div class="features-column">
+                        <div class="feature scroll-reveal">
+                            <i class="fas fa-bolt feature-icon yellow"></i>
+                            <div>
+                                <h3>Real-World Cost Factors</h3>
+                                <p>Input your actual electricity rates, filament costs, and equipment depreciation for precise calculations.</p>
+                            </div>
+                        </div>
+                        <div class="feature scroll-reveal">
+                            <i class="fas fa-cog feature-icon blue"></i>
+                            <div>
+                                <h3>Customizable Profit Margins</h3>
+                                <p>Set different profit margins for different project types and client categories.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features-column">
+                        <div class="feature scroll-reveal">
+                            <i class="fas fa-file-alt feature-icon green"></i>
+                            <div>
+                                <h3>Professional Reports</h3>
+                                <p>Generate detailed project reports and maintain comprehensive printing history.</p>
+                            </div>
+                        </div>
+                        <div class="feature scroll-reveal">
+                            <i class="fas fa-chart-line feature-icon purple"></i>
+                            <div>
+                                <h3>Business Insights</h3>
+                                <p>Track your most profitable projects and optimize your pricing strategy over time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section with Images -->
+    <section class="benefits">
+        <div class="container">
+            <div class="text-center section-header scroll-reveal">
+                <h2>
+                    Why 3D Printing Professionals Choose 3DCalc Pro
+                </h2>
+                <p>
+                    Transform your pricing strategy and grow your business with tools designed specifically for 3D printing professionals.
+                </p>
+            </div>
+            
+            <!-- Benefit 1: Precise Cost Calculation -->
+            <div class="benefit-item scroll-reveal">
+                <div class="benefit-card">
+                    <i class="fas fa-calculator benefit-icon blue"></i>
+                    <h3>Precise Cost Calculation</h3>
+                    <p>Calculate exact project costs including electricity, filament, and printer depreciation</p>
+                </div>
+                <div class="benefit-images">
+                    <div class="image-container">
+                        <img src="images/cost-calculator.png" alt="Quick Cost Calculator showing detailed calculation for Pokémon Pikachu print with cost breakdown" class="uniform-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/project-details.png" alt="Calculator interface showing project details input form" class="uniform-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/labor-configuration.png" alt="Labor Configuration settings with pricing tips and monthly overview" class="uniform-image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefit 2: Business Configuration -->
+            <div class="benefit-item reverse scroll-reveal">
+                <div class="benefit-card">
+                    <i class="fas fa-cog benefit-icon"></i>
+                    <h3>Business Configuration</h3>
+                    <p>Configure your business settings including electricity rates, workspace costs, and equipment management</p>
+                </div>
+                <div class="benefit-images">
+                    <div class="image-container">
+                        <img src="images/tax-pricing.png" alt="Tax & Pricing settings showing VAT rates and profit margins configuration" class="uniform-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/business-settings.png" alt="Business Settings showing energy utilities and fixed costs configuration" class="uniform-image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefit 3: Printers and Materials Management -->
+            <div class="benefit-item scroll-reveal">
+                <div class="benefit-card">
+                    <i class="fas fa-print benefit-icon teal"></i>
+                    <h3>Printers and Materials Management</h3>
+                    <p>Manage your 3D printers and materials inventory with detailed cost tracking and analysis</p>
+                </div>
+                <div class="benefit-images">
+                    <div class="image-container">
+                        <img src="images/printer-management.png" alt="Printer Management showing multiple 3D printers with cost per hour calculations" class="uniform-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/add-printer.png" alt="Add New Printer interface with printer details and specifications" class="uniform-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/material-management-1.png" alt="Material Management showing different filament types and costs per gram" class="uniform-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/material-management-2.png" alt="Material Management with filament inventory and cost tracking" class="uniform-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="images/printer-cost-analysis.png" alt="Printer cost analysis and ROI calculations" class="uniform-image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefit 4: Professional Reports & History -->
+            <div class="benefit-item reverse scroll-reveal">
+                <div class="benefit-card">
+                    <i class="fas fa-file-alt benefit-icon green"></i>
+                    <h3>Professional Reports & History</h3>
+                    <p>Generate detailed project reports and maintain comprehensive calculation history</p>
+                </div>
+                <div class="benefit-images">
+                    <div class="image-container">
+                        <img src="images/Report.png" alt="Reports & History dashboard showing total projects, value, and profit with calculation history" class="uniform-image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefit 5: ROI Analysis & Business Growth -->
+            <div class="benefit-item scroll-reveal">
+                <div class="benefit-card">
+                    <i class="fas fa-chart-line benefit-icon purple"></i>
+                    <h3>ROI Analysis & Business Growth</h3>
+                    <p>Calculate return on investment for your printers and make data-driven business decisions</p>
+                </div>
+                <div class="benefit-images">
+                    <div class="image-container">
+                        <img src="images/roi-calculator.png" alt="ROI Calculator showing printer cost analysis and return calculations" class="uniform-image">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefit 6: User Management & Authentication -->
+            <div class="benefit-item reverse scroll-reveal">
+                <div class="benefit-card">
+                    <i class="fas fa-user-lock benefit-icon"></i>
+                    <h3>User Management & Authentication</h3>
+                    <p>Secure account management with professional login and registration system</p>
+                </div>
+                <div class="benefit-images">
+                    <div class="image-container">
+                        <img src="images/Login.png" alt="Sign In page for 3DCalc Pro professional 3D printing calculator" class="uniform-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center scroll-reveal">
+                <button class="cta-btn" onclick="handleSubscribeClick()">
+                    <i class="fas fa-users"></i> Join Thousands of Professionals
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <div class="container">
+            <div class="text-center max-width-content scroll-reveal">
+                <h2>
+                    Trusted by 3D Printing Professionals Worldwide
+                </h2>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">
+                        "3DCalc Pro has completely transformed how I price my 3D printing services. 
+                        I'm finally confident that every quote covers all my costs and ensures a healthy profit margin."
+                    </p>
+                    <div class="testimonial-author">
+                        - Professional 3D Printing Business Owner
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="container text-center">
+            <h2 class="scroll-reveal">
+                Ready to Price with Confidence?
+            </h2>
+            <p class="scroll-reveal">
+                Join thousands of 3D printing professionals who have transformed their businesses with accurate pricing.
+            </p>
+            <button class="cta-btn-light scroll-reveal" onclick="handleSubscribeClick()">
+                <i class="fas fa-rocket"></i> Start Your Subscription Today
+            </button>
+            <p class="small-text scroll-reveal">
+                Professional pricing calculator for serious 3D printing businesses
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="footer-logo">
+                <img src="images/Calculadora Logo.png" alt="3DCalc Pro Logo" class="logo-image-footer">
+                <span>3DCalc Pro</span>
+            </div>
+            <p class="footer-text">
+                Professional 3D printing cost calculator and pricing tool
+            </p>
+            <p class="copyright">
+                3DCalc Pro® is a registered trademark. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubscribeClick() {
+            window.open("https://checkout.stripe.com/c/pay/cs_live_a1BC9tfMT7NJM4JPnPH497nlirMAWwxNYWRZlHCzMdz6T8xeRNlkBeGAhg#fid2cGd2ZndsdXFsamtQa2x0cGBrYHZ2QGtkZ2lgYSc%2FcXdwYCknZHVsTmB8Jz8ndW5aaWxzYFowNFdOfEJnTzFEfFRGX3xfSWd%2FVjxhN3ExPFRsNWh9ZmY8ZEJVNEhqR3dsRHx2bWxWdX9PYERndkJ0dTEwVFJ3aWxjc0JMMlV2alJVYXd9QWFUY29iNkhobzU1QWJ9dV1ubE8nKSdjd2poVmB3c2B3Jz9xd3BgKSdpZHxqcHFRfHVgJz8ndmxrYmlgWmxxYGgnKSdga2RnaWBVaWRmYG1qaWFgd3YnP3F3cGB4JSUl", "_blank");
+        }
+
+        // Add 'scrolled' class to header when page is scrolled
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.sticky-header');
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Animation of elements when scrolling the page
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+            
+            const revealOnScroll = function() {
+                for (let i = 0; i < scrollRevealElements.length; i++) {
+                    const elementTop = scrollRevealElements[i].getBoundingClientRect().top;
+                    const elementVisible = 150;
+                    
+                    if (elementTop < window.innerHeight - elementVisible) {
+                        scrollRevealElements[i].classList.add('revealed');
+                    }
+                }
+            };
+            
+            window.addEventListener('scroll', revealOnScroll);
+            revealOnScroll(); // Reveal visible elements on initial load
+        });
+    </script>
+</body>
+</html>
